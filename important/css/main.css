@@ -1,0 +1,122 @@
+:root {
+  --brand-gradient: linear-gradient(135deg, #6ea8fe 0%, #a370f7 100%);
+  --brand-gradient-dark: linear-gradient(135deg, #1c1f24 0%, #2a2f36 100%);
+}
+
+/* Header background dynamic */
+
+#site-header {
+  background: var(--brand-gradient);
+  /* box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); */
+  transition: top 0.3s ease-in-out;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+#site-header.hide {
+  top: -100px; /* header ki height jitni approx */
+}
+
+
+/* Dark theme override */
+[data-bs-theme="dark"] #site-header {
+  background: var(--brand-gradient-dark);
+}
+
+/* Hero background also dynamic */
+#hero {
+  background: var(--brand-gradient);
+  color: #1d1d1d;
+}
+[data-bs-theme="dark"] #hero {
+  background: var(--brand-gradient-dark);
+  color: #f8f9fa;
+}
+
+
+.btn-theme-toggle {
+    padding: .4rem .75rem;
+    font-size: .9rem;
+    border-radius: .4rem;
+    border: 1px solid rgb(255 255 255 / 24%);
+    background: #9b78f8;
+    color: #f0f1f1;
+}
+
+/* hover */
+.btn-theme-toggle:hover {
+  background: #c3a5ff;
+  color: #f0f1f1;
+}
+
+/* dark mode */
+[data-bs-theme="dark"] .btn-theme-toggle {
+  background: #2b2f33;
+  color: #f8f9fa;
+  border-color: rgba(255,255,255,.2);
+}
+[data-bs-theme="dark"] .btn-theme-toggle:hover {
+  background: #3a3f46;
+}
+
+/* mobile  */
+/* Light theme → darker, muted gradient */
+[data-bs-theme="light"] .offcanvas.offcanvas-start {
+  background: linear-gradient(135deg, #4a60d3 0%, #7a4bd3 100%) !important;
+  color: #fff;
+}
+[data-bs-theme="light"] .offcanvas.offcanvas-start .nav-link {
+  color: #fff;
+}
+[data-bs-theme="light"] .offcanvas.offcanvas-start .nav-link:hover {
+  color: #e0e0e0;
+}
+
+/* Dark theme → deep charcoal gradient */
+[data-bs-theme="dark"] .offcanvas.offcanvas-start {
+  background: linear-gradient(160deg, #1a1d24 0%, #2a2f36 100%) !important;
+  color: #f8f9fa;
+}
+[data-bs-theme="dark"] .offcanvas.offcanvas-start .nav-link {
+  color: #f8f9fa;
+}
+[data-bs-theme="dark"] .offcanvas.offcanvas-start .nav-link:hover {
+  color: #ccc;
+}
+
+/* start design css */
+/* Light theme gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #a8c6ff 0%, #ece1ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Dark theme gradient text */
+[data-bs-theme="dark"] .text-gradient {
+  background: linear-gradient(135deg, #4a60d3 0%, #7a4bd3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Default (light theme) */
+.highlight-offer {
+  background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+  color: #fff;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Dark theme override */
+[data-bs-theme="dark"] .highlight-offer {
+  background: linear-gradient(135deg, #3a3f46 0%, #565c63 100%);
+  color: #f8f9fa;
+}
+

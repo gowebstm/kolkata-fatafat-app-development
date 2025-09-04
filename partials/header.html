@@ -1,0 +1,92 @@
+<!-- Common Header with Left-side Mobile Menu (icon on right) -->
+<header class="sticky-top site-header container">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- Brand (left) -->
+    <a class="navbar-brand d-flex align-items-center gap-2 m-0" href="/index.html">
+      <img src="/important/img/logo.svg" width="28" height="28" alt="Logo">
+      <span class="fw-bold">Kolkata FF Studio</span>
+    </a>
+
+    <!-- Desktop nav (center) -->
+    <div class="d-none d-lg-flex ms-4 flex-grow-1">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html#pricing">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html#faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Right cluster -->
+    <div class="d-flex align-items-center gap-2 ms-auto">
+      <!-- Theme switcher (desktop) -->
+       <div class="dropdown d-none d-lg-block">
+          <button class="btn btn-theme-toggle dropdown-toggle d-flex align-items-center gap-2"
+                  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-circle-half"></i><span data-theme-label>Auto</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+            <li><button class="dropdown-item" data-theme-value="auto"><i class="bi bi-circle-half"></i> Auto</button></li>
+            <li><button class="dropdown-item" data-theme-value="light"><i class="bi bi-sun"></i> Light</button></li>
+            <li><button class="dropdown-item" data-theme-value="dark"><i class="bi bi-moon-stars"></i> Dark</button></li>
+          </ul>
+        </div>
+
+
+      <a class="btn btn-primary d-none d-lg-inline-flex fw-semibold" href="/contact.html">
+        <i class="bi bi-telephone"></i> Get a Quote
+      </a>
+
+      <!-- Mobile hamburger (right) -->
+      <button class="navbar-toggler d-lg-none" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#mobileMenuLeft"
+              aria-controls="mobileMenuLeft" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas (Left → Right slide) -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenuLeft" aria-labelledby="mobileMenuLeftLabel">
+    <div class="offcanvas-header border-bottom border-light-subtle">
+      <h5 class="offcanvas-title d-flex align-items-center gap-2" id="mobileMenuLeftLabel">
+        <img src="/important/img/logo.svg" width="24" height="24" alt="Logo">
+        Kolkata FF Studio
+      </h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body d-flex flex-column">
+      <!-- Nav links -->
+      <ul class="navbar-nav fs-6">
+        <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="../"><i class="bi bi-house me-2"></i>Home</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="/index.html#features"><i class="bi bi-grid me-2"></i>Features</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="/index.html#about"><i class="bi bi-info-circle me-2"></i>About</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="/index.html#pricing"><i class="bi bi-cash-coin me-2"></i>Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="/index.html#faq"><i class="bi bi-question-circle me-2"></i>FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-dismiss="offcanvas" href="/contact.html"><i class="bi bi-envelope me-2"></i>Contact</a></li>
+      </ul>
+
+      <hr class="my-4 border-light-subtle">
+
+      <!-- Theme switcher (mobile) -->
+      <div class="dropup mt-auto">
+        <button class="btn btn-outline-light w-100 dropdown-toggle d-flex align-items-center justify-content-center gap-2"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-circle-half"></i><span data-theme-label>Auto</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark w-100">
+          <li><button class="dropdown-item" data-theme-value="auto"><i class="bi bi-circle-half"></i> Auto</button></li>
+          <li><button class="dropdown-item" data-theme-value="light"><i class="bi bi-sun"></i> Light</button></li>
+          <li><button class="dropdown-item" data-theme-value="dark"><i class="bi bi-moon-stars"></i> Dark</button></li>
+        </ul>
+      </div>
+
+      <a class="btn btn-primary w-100 mt-3" href="/contact.html" data-bs-dismiss="offcanvas">
+        <i class="bi bi-telephone"></i> Get a Quote
+      </a>
+    </div>
+  </div>
+</header>
