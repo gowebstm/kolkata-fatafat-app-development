@@ -22,7 +22,7 @@ Whether you're starting a new digital Matka business or upgrading your current s
 Welcome to the **ultimate solution** for Kolkata Fatafat app development and Matka-style gaming platforms.  
 Our service includes **robust, secure, and feature-rich Android apps** for the Kolkata FF audience.
 
-💰 **Price:** ₹25,000 ~~₹55,000~~
+💰 **Price:** ₹55,000 ~~₹80,000~~
 
 ---
 
