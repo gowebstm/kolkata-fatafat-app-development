@@ -65,7 +65,7 @@ Developed by **GoWebs** – Experts in Kolkata Fatafat / Kolkata FF app & websit
 ---
 
 ## 📜 License
-MIT License © 2025 GoWebs  
+This project is licensed under the **MIT License © 2025 GoWebs**.
 
-You are free to use, copy, modify, merge, publish, and distribute this code.  
-However, **copyright remains with GoWebs** — credit is required if you reuse this content.
+⚠️ Important:  
+If anyone uses this content or software **without permission or without keeping the “Developed by GoWebs” credit**, the copyright will remain enforceable by GoWebs.
