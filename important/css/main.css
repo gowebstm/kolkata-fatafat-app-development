@@ -120,3 +120,33 @@
   color: #f8f9fa;
 }
 
+.lead {
+  color: #fcfaff !important;
+}
+
+
+#dynamicBadge {
+  font-family: monospace;
+}
+
+#typeText {
+  border-right: 2px solid currentColor;
+  padding-right: 2px;
+  white-space: nowrap;
+  animation: blinkCursor .8s steps(1) infinite;
+}
+
+@keyframes blinkCursor {
+  50% { border-color: transparent; }
+}
+
+
+.gowebs-provide {
+  background: linear-gradient(135deg, #b1caff 0%, #9f74f8 100%);
+  color: #fff;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+  font-weight: 600;
+  display: inline-block;
+}

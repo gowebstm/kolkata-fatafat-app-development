@@ -87,3 +87,50 @@ window.addEventListener("scroll", () => {
 
   lastScroll = currentScroll;
 });
+
+// Content js in heo sections
+document.addEventListener("DOMContentLoaded", () => {
+  const items = [
+    "Kolkata FF Website design",
+    "Kolkata Fatafat Application development",
+    "Fast, Secure & SEO-ready FF Apps",
+    "WhatsApp BOT Integration",
+    "Bookie & Agent Panel Solutions"
+  ];
+
+  const textEl = document.getElementById("typeText");
+  let itemIndex = 0;
+  let charIndex = 0;
+  let deleting = false;
+
+  function typeEffect() {
+    const currentText = items[itemIndex];
+
+    if (!deleting) {
+      // typing forward
+      textEl.textContent = currentText.substring(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === currentText.length) {
+        deleting = true;
+        setTimeout(typeEffect, 2000); // wait before deleting
+        return;
+      }
+    } else {
+      // deleting backward
+      textEl.textContent = currentText.substring(0, charIndex - 1);
+      charIndex--;
+
+      if (charIndex === 0) {
+        deleting = false;
+        itemIndex = (itemIndex + 1) % items.length; // next text
+      }
+    }
+
+    const speed = deleting ? 50 : 100; // typing vs deleting speed
+    setTimeout(typeEffect, speed);
+  }
+
+  typeEffect();
+});
+
