@@ -227,3 +227,38 @@
 [data-bs-theme="light"] #we-provide .nav-link {
   color: #555 !important;
 }
+
+/* Base style */
+.p-gowebs {
+  text-decoration: none !important; /* remove underline */
+  font-weight: 600;
+}
+
+/* Light mode */
+[data-bs-theme="light"] .p-gowebs {
+  color: #F1B733 !important;
+}
+
+/* Dark mode */
+[data-bs-theme="dark"] .p-gowebs {
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
+
+
+/* Base style */
+.links-gowebs {
+  text-decoration: none !important; /* remove underline */
+  font-weight: 200;
+}
+
+/* Light mode */
+[data-bs-theme="light"] .links-gowebs {
+  color: #8f8f8f !important;
+}
+
+/* Dark mode */
+[data-bs-theme="dark"] .links-gowebs {
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
