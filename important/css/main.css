@@ -150,3 +150,80 @@
   font-weight: 600;
   display: inline-block;
 }
+
+
+
+/* Dark mode: button custom color */
+[data-bs-theme="dark"] #we-provide .btn.btn-primary {
+  background-color: #353535 !important;
+  border-color: #353535 !important;
+  color: #fff !important;
+}
+[data-bs-theme="dark"] #we-provide .btn.btn-primary:hover {
+  background-color: #222 !important; /* darker on hover */
+  border-color: #222 !important;
+}
+
+/* Dark mode: all icons inside section */
+[data-bs-theme="dark"] #we-provide i.bi {
+  color: #f1b733 !important;
+}
+
+/* Dark mode: nav-pills tab icons */
+[data-bs-theme="dark"] #we-provide .nav-pills .nav-link i {
+  color: #353535 !important;
+}
+
+/* Dark mode: active nav-pills */
+[data-bs-theme="dark"] #we-provide .nav-pills .nav-link.active,
+[data-bs-theme="dark"] #we-provide .nav-pills .show > .nav-link {
+  color: #3f3f3f !important;
+  background-color: #f1b733 !important;
+}
+
+/* Dark mode: default nav-link */
+[data-bs-theme="dark"] #we-provide .nav-link {
+  color: #8b8b8b !important;
+}
+
+
+/* ------------------------------------------------- */
+/* Light mode styles with #A172F7 and #70A5FD mix    */
+/* ------------------------------------------------- */
+
+/* Light mode: button with gradient */
+[data-bs-theme="light"] #we-provide .btn.btn-primary {
+  background: linear-gradient(135deg, #70A5FD, #A172F7) !important;
+  border: none !important;
+  color: #fff !important;
+}
+[data-bs-theme="light"] #we-provide .btn.btn-primary:hover {
+  filter: brightness(1.1);
+}
+
+/* Light mode: all icons inside section */
+[data-bs-theme="light"] #we-provide i.bi {
+  background: linear-gradient(135deg, #b3d0ff, #e0d0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Light mode: nav-pills tab icons same gradient */
+[data-bs-theme="light"] #we-provide .nav-pills .nav-link i {
+  background: linear-gradient(135deg, #b2d0ff, #dbc8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Light mode: active nav-pills */
+[data-bs-theme="light"] #we-provide .nav-pills .nav-link.active,
+[data-bs-theme="light"] #we-provide .nav-pills .show > .nav-link {
+  color: #fff !important;
+  background: linear-gradient(135deg, #70A5FD, #A172F7) !important;
+  border: none !important;
+}
+
+/* Light mode: default nav-link color */
+[data-bs-theme="light"] #we-provide .nav-link {
+  color: #555 !important;
+}
