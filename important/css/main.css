@@ -262,3 +262,51 @@
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
 }
 
+
+/* Light theme */
+[data-bs-theme="light"] .gowebs-section {
+  background-color: #3f308f !important; /* violet */
+  color: #fcfaff !important;           /* soft white */
+}
+
+/* Dark theme */
+[data-bs-theme="dark"] .gowebs-section {
+  background-color: #24282f !important; /* dark gray */
+  color: #f8f9fa !important;            /* light gray/white */
+}
+
+
+/* Light mode - normal image */
+[data-bs-theme="light"] .hero-illustration {
+  filter: none;
+}
+
+/* Dark mode - grayscale image */
+[data-bs-theme="dark"] .hero-illustration {
+  filter: grayscale(100%);
+}
+
+/* Light mode - normal logo */
+[data-bs-theme="light"] .logo {
+  filter: none;
+}
+
+/* Dark mode - grayscale logo */
+[data-bs-theme="dark"] .logo {
+  filter: grayscale(100%) brightness(0.9);
+}
+
+
+/* Light mode */
+[data-bs-theme="light"] .btn.gowebs-quote {
+  color: #451fcd !important;
+  background: #fee05a !important;
+  border: none !important;
+}
+
+/* Dark mode */
+[data-bs-theme="dark"] .btn.gowebs-quote {
+  color: #ffffff !important;
+  background: #3d3d3d !important;
+  border: none !important;
+}
