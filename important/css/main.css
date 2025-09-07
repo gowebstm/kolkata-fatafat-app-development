@@ -387,3 +387,121 @@
 .bg-warning-subtle { background: rgba(255,193,7,.18); color:#ffd76a; }
 .bg-dark-subtle { background: rgba(33,37,41,.18); color:#cfd3d6; }
 /* Portfolio Section END  */
+
+/* Dark mode pricing card background */
+[data-bs-theme="dark"] #pricing .card {
+  background: #2b3035 !important;
+}
+
+
+/* ========================= */
+/* Website Plan Button       */
+/* ========================= */
+
+/* Light mode */
+[data-bs-theme="light"] .btn-website {
+  background: #a073f8 !important;   /* violet */
+  border: none !important;
+}
+
+/* Dark mode */
+[data-bs-theme="dark"] .btn-website {
+  background: #353b41 !important;   /* dark gray */
+  border: none !important;
+}
+
+/* ========================= */
+/* Application Plan Button   */
+/* ========================= */
+
+/* Light mode (Popular plan button) */
+[data-bs-theme="light"] .btn-application {
+  background: #198754 !important;   /* green */
+  border: none !important;
+}
+
+/* Dark mode (Popular plan button) */
+[data-bs-theme="dark"] .btn-application {
+  background: #ff9e07 !important;   /* orange */
+  border: none !important;
+}
+
+/* Light mode */
+[data-bs-theme="light"] .btn-custom {
+  background: #f8f9fa !important;
+  border: 1px solid #a073f8 !important;
+  color: #a073f8 !important;
+}
+
+/* Dark mode */
+[data-bs-theme="dark"] .btn-custom {
+  background: #2b3035 !important;
+  border: 1px solid #3d3d3d !important;
+  color: #797979 !important;
+}
+
+/* ========================= */
+/* Custom / Website Plan     */
+/* ========================= */
+
+/* Light mode */
+[data-bs-theme="light"] .plan-custom,
+[data-bs-theme="light"] .plan-website {
+  color: #a073f8 !important;  /* violet */
+}
+
+/* Dark mode */
+[data-bs-theme="dark"] .plan-custom,
+[data-bs-theme="dark"] .plan-website {
+  color: #858585 !important;  /* gray */
+}
+
+/* ========================= */
+/* Application (Popular)     */
+/* ========================= */
+
+/* Light mode */
+[data-bs-theme="light"] .plan-application {
+  color: #198754 !important;  /* green */
+}
+
+/* Dark mode */
+[data-bs-theme="dark"] .plan-application {
+  color: #dbb459 !important;  /* gold */
+}
+
+
+/* Light mode icon colors */
+[data-bs-theme="light"] .bi-youtube { color: #ff0000 !important; }   /* red */
+[data-bs-theme="light"] .bi-facebook { color: #1877f2 !important; } /* blue */
+[data-bs-theme="light"] .bi-whatsapp { color: #25d366 !important; } /* green */
+
+/* Dark mode - keep default gray */
+[data-bs-theme="dark"] .bi-youtube,
+[data-bs-theme="dark"] .bi-facebook,
+[data-bs-theme="dark"] .bi-whatsapp {
+  color: #adb5bd !important; /* muted gray */
+}
+
+/* Light mode Contact button */
+[data-bs-theme="light"] .btn-contact {
+  background: #a073f7 !important;
+  border: none !important;
+}
+
+/* Dark mode Contact button */
+[data-bs-theme="dark"] .btn-contact {
+  background: #252525 !important;
+  border: none !important;
+}
+/* Light mode - Send Message button */
+[data-bs-theme="light"] .btn-send {
+  background: #6f42c1 !important;   /* purple */
+  border: none !important;
+}
+
+/* Dark mode - Send Message button */
+[data-bs-theme="dark"] .btn-send {
+  background: #333333 !important;   /* dark gray */
+  border: none !important;
+}

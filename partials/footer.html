@@ -3,22 +3,41 @@
   <div class="container py-4">
     <div class="row g-4 align-items-center">
       <div class="col-md-6">
-        <div class="d-flex align-items-center gap-2">
-          <img src="/important/img/logo.svg" width="28" height="28" alt="Logo">
-          <strong>Kolkata FF Studio</strong>
-        </div>
-        <p class="text-secondary mt-2 mb-0">
-          Kolkata FF Website design & Kolkata Fatafat Application development services — fast, secure, and brand-ready.
+        <p class="text-secondary mt-2 mb-2">
+          Fast, secure & modern <strong>Kolkata Fatafat websites</strong> and 
+          <strong>Kolkata FF applications</strong> built for your business.
         </p>
+
+        <!-- Social Icons -->
+        <div class="d-flex gap-3 mt-2">
+        <a href="https://www.youtube.com/@gomatix-in" target="_blank" rel="noopener" class="fs-5">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://www.facebook.com/gowebs.kolkata/videos" target="_blank" rel="noopener" class="fs-5">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://wa.me/918585858844" target="_blank" rel="noopener" class="fs-5">
+          <i class="bi bi-whatsapp"></i>
+        </a>
       </div>
+
+      </div>
+
       <div class="col-md-6 text-md-end">
         <a class="link-secondary me-3" href="/privacy.html">Privacy</a>
         <a class="link-secondary me-3" href="/terms.html">Terms & Conditions</a>
         <a class="link-secondary" href="/contact.html">Contact</a>
       </div>
     </div>
+
     <div class="pt-3 text-center text-secondary small">
-      © <span id="yearNow"></span> Kolkata FF Studio. All rights reserved.
+      © <span id="yearNow"></span> Kolkata FF Studio. All rights reserved. |
+      Developed by <a href="https://gowebs.in/" target="_blank" rel="noopener" class="text-decoration-none">GoWebs</a>
     </div>
   </div>
 </footer>
+
+<script>
+  // Dynamic year
+  document.getElementById("yearNow").textContent = new Date().getFullYear();
+</script>
