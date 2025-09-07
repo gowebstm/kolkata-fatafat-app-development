@@ -312,3 +312,78 @@
 }
 
 
+
+/* ---------- Base styles ---------- */
+#portfolio .card {
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  border-radius: 14px;
+}
+#portfolio .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+}
+#portfolio .card .badge {
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+.portfolio-img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  transition: filter .25s ease, opacity .25s ease;
+}
+
+/* ---------- Light theme ---------- */
+[data-bs-theme="light"] #portfolio .card {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.08);
+}
+[data-bs-theme="light"] #portfolio .card:hover {
+  border-color: rgba(0,0,0,.16);
+}
+[data-bs-theme="light"] #portfolio .card-title a {
+  color: #0d6efd;
+}
+[data-bs-theme="light"] #portfolio .card-text {
+  color: #6c757d;
+}
+[data-bs-theme="light"] .portfolio-img {
+  filter: none;
+  opacity: 1;
+}
+
+/* ---------- Dark theme ---------- */
+[data-bs-theme="dark"] #portfolio .card {
+  background: #171a1f;
+  border: 1px solid #2a2f36;
+}
+[data-bs-theme="dark"] #portfolio .card:hover {
+  border-color: #39414b;
+  box-shadow: 0 12px 28px rgba(0,0,0,.35);
+}
+[data-bs-theme="dark"] #portfolio .card-title a {
+  color: #6ea8fe;
+}
+[data-bs-theme="dark"] #portfolio .card-text {
+  color: #adb5bd;
+}
+[data-bs-theme="dark"] .portfolio-img {
+  filter: grayscale(100%) brightness(.92) contrast(1.05);
+  opacity: .95;
+}
+[data-bs-theme="dark"] #portfolio .card:hover .portfolio-img {
+  opacity: 1;
+}
+
+/* ---------- Subtle badge helpers ---------- */
+.bg-purple-subtle { background: rgba(111, 66, 193, .14); color: #9b7de2; }
+.bg-indigo-subtle { background: rgba(102, 16, 242, .14); color: #9f8bff; }
+.bg-primary-subtle { background: rgba(13,110,253,.14); color:#6ea8fe; }
+.bg-secondary-subtle { background: rgba(108,117,125,.14); color:#c2c7cc; }
+.bg-success-subtle { background: rgba(25,135,84,.14); color:#75b798; }
+.bg-info-subtle { background: rgba(13,202,240,.14); color:#66d3f5; }
+.bg-warning-subtle { background: rgba(255,193,7,.18); color:#ffd76a; }
+.bg-dark-subtle { background: rgba(33,37,41,.18); color:#cfd3d6; }
+/* Portfolio Section END  */
