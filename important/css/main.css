@@ -505,3 +505,17 @@
   background: #333333 !important;   /* dark gray */
   border: none !important;
 }
+
+:root {
+  --theme-header-color: #9183F9; /* default light */
+}
+
+/* Light mode */
+[data-bs-theme="light"] {
+  --theme-header-color: #9183F9; /* violet */
+}
+
+/* Dark mode */
+[data-bs-theme="dark"] {
+  --theme-header-color: #373b41; /* dark gray */
+}
